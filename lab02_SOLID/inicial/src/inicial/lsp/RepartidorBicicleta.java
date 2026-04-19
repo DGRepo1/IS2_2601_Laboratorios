@@ -1,6 +1,14 @@
-package inicial.lsp;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package LSP;
 
-public class RepartidorBicicleta extends Repartidor {
+/**
+ *
+ * @author l33211
+ */
+public class RepartidorBicicleta extends Repartidor{
 
     public RepartidorBicicleta(String nombre) {
         super(nombre);
@@ -16,10 +24,8 @@ public class RepartidorBicicleta extends Repartidor {
         System.out.println(getNombre() + " está recogiendo el pedido en bicicleta.");
     }
 
-    @Override
-    public void repostarCombustible() {
-        throw new UnsupportedOperationException("Un repartidor en bicicleta no usa combustible.");
-    }
-
+    
+    
+    
     
 }

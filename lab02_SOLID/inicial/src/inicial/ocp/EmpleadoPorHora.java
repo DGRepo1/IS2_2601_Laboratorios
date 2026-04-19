@@ -8,13 +8,15 @@ package OCP;
  *
  * @author l33211
  */
-public abstract class Empleado {
-    private String tipoEmpleado;
+public class EmpleadoPorHora extends Empleado {
 
-    public Empleado(String tipoEmpleado) {
-        this.tipoEmpleado = tipoEmpleado;
+    public EmpleadoPorHora(String tipoEmpleado) {
+        super(tipoEmpleado);
     }
-    
-    public abstract double calcularSalario();
+
+    @Override
+    public double calcularSalario() {
+        return 20*40;
+    }
     
 }

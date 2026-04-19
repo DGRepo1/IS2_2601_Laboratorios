@@ -1,6 +1,14 @@
-package inicial.isp;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ISP;
 
-public class Cajero implements IEmpleadoTienda{
+/**
+ *
+ * @author diego
+ */
+public class Cajero implements IRegistradorVentas{
     private String nombre;
 
     public Cajero(String nombre) {
@@ -12,15 +20,5 @@ public class Cajero implements IEmpleadoTienda{
         System.out.println(nombre + " registró la venta de " + producto + " por S/ " + monto);        
     }
 
-    @Override
-    public void actualizarInventario(String producto, int cantidad) {
-        System.out.println(nombre + " no gestiona inventario.");
-        
-    }
-
-    @Override
-    public void supervisarOperacion() {
-        System.out.println(nombre + " no supervisa operaciones.");        
-    }
 
 }

@@ -1,24 +1,27 @@
-package inicial.isp;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ISP;
 
-public class Almacenero implements IEmpleadoTienda {
+/**
+ *
+ * @author diego
+ */
+
+
+public class Almacenero implements IGestionInventario {
     private String nombre;
 
     public Almacenero(String nombre) {
         this.nombre = nombre;
     }
 
-    @Override
-    public void registrarVenta(String producto, double monto) {
-        System.out.println(nombre + " no registra ventas.");
-    }
-
+    
     @Override
     public void actualizarInventario(String producto, int cantidad) {
-        System.out.println(nombre + " actualizó el stock de " + producto + " en " + cantidad + " unidades.");
+        System.out.println(nombre + " no gestiona inventario.");
+        
     }
 
-    @Override
-    public void supervisarOperacion() {
-        System.out.println(nombre + " no supervisa operaciones.");
-    }
 }

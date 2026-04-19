@@ -1,5 +1,13 @@
-package inicial.lsp;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package LSP;
 
+/**
+ *
+ * @author l33211
+ */
 public abstract class Repartidor {
     private String nombre;
 
@@ -14,7 +22,5 @@ public abstract class Repartidor {
     public abstract void entregarPedido();
 
     public abstract void recogerPedido();
-
-    public abstract void repostarCombustible();
 
 }

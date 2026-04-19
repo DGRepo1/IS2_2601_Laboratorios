@@ -1,22 +1,28 @@
-package inicial.isp;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
 
+package ISP;
+
+/**
+ *
+ * @author diego
+ */
 public class Main {
-    public static void main(String[] args) {
-        IEmpleadoTienda cajero = new Cajero("Ana");
-        IEmpleadoTienda almacenero = new Almacenero("Luis");
-        IEmpleadoTienda supervisor = new Supervisor("Marta");
 
-        cajero.registrarVenta("Mouse inalámbrico", 45.0);
-        cajero.actualizarInventario("Mouse inalámbrico", 10);
+    public static void main(String[] args) {
+        IRegistradorVentas cajero = new Cajero("Carlos");
+        IGestionInventario almacenero = new Almacenero("Alvaro");
+        ISupervisionOperativa supervisor = new Supervisor("Susana");
+
+        cajero.registrarVenta("Pistola de agua P== ", 67.0);
 
         System.out.println();
 
-        almacenero.actualizarInventario("Teclado mecánico", 20);
-        almacenero.supervisarOperacion();
+        almacenero.actualizarInventario("Cables Ethernet Cat 6a", 322);
 
         System.out.println();
 
         supervisor.supervisarOperacion();
-        supervisor.registrarVenta("Laptop", 3200.0);
     }
 }

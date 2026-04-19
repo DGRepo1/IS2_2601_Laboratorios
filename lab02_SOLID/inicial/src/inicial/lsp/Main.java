@@ -1,8 +1,16 @@
-package inicial.lsp;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package LSP;
 
+/**
+ *
+ * @author l33211
+ */
 public class Main {
     public static void main(String[] args) {
-        Repartidor repartidorMoto = new RepartidorMoto("Carlos");
+        RepartidorMoto repartidorMoto = new RepartidorMoto("Carlos");
         Repartidor repartidorBici = new RepartidorBicicleta("Lucía");
 
         repartidorMoto.recogerPedido();
@@ -13,6 +21,6 @@ public class Main {
 
         repartidorBici.recogerPedido();
         repartidorBici.entregarPedido();
-        repartidorBici.repostarCombustible(); // Esto lanzará una excepción, lo cual viola el LSP
     }
+ 
 }

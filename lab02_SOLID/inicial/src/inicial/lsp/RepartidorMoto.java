@@ -1,6 +1,14 @@
-package inicial.lsp;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package LSP;
 
-public class RepartidorMoto extends Repartidor {
+/**
+ *
+ * @author l33211
+ */
+public class RepartidorMoto extends Repartidor implements IUsaCombustible {
 
     public RepartidorMoto(String nombre) {
         super(nombre);
@@ -20,4 +28,6 @@ public class RepartidorMoto extends Repartidor {
     public void repostarCombustible() {
         System.out.println(getNombre() + " está repostando combustible para la moto.");
     }
+    
+    
 }

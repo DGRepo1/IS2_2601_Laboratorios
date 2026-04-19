@@ -8,16 +8,13 @@ package SRP;
  *
  * @author l33211
  */
-public class Informe {
-    private String reporteVenta;
-
-    public Informe(String reporteVenta) {
-        this.reporteVenta = reporteVenta;
-    }
+public class ServicioCorreo {
     
-    public void generarInforme(){
-        System.out.println("Informe generado: " + reporteVenta);
+    public void enviarCorreo(Informe informe){
+        
+        System.out.println("Se envio por correo.");
     }
+        
     
     
 }
